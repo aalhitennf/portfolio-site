@@ -35,7 +35,7 @@ jobs:
           HOST: ${{ secrets.SSH_IP }}
           USERNAME: ${{ secrets.SSH_USERNAME }}
           PORT: ${{ secrets.SSH_PORT }}
-          KEY: ${{ secrets.SSH_PUBKEY }}
+          KEY: ${{ secrets.SSH_RSA }}
         with:
           source: "./build"
           target: "/home/homepage/site"
